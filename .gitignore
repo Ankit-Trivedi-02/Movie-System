@@ -1,0 +1,46 @@
+# Node modules (both frontend and backend)
+node_modules/
+**/node_modules/
+
+# Vite build output
+dist/
+
+# Environment variables
+.env
+.env.*  # for Vite and backend env files like .env.production, .env.local etc.
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+log/
+logs/
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE/editor settings
+.vscode/
+.idea/
+*.sw?
+
+# MongoDB (only if you store local DB data here)
+data/
+dump/
+
+# Optional: coverage reports (if using testing tools like Jest)
+coverage/
+
+# Optional: local dev tools (like PM2 logs)
+pids/
+*.pid
+*.seed
+
+# Optional: eslint cache
+.eslintcache
+
+# Optional: TypeScript build output
+*.tsbuildinfo
