@@ -14,6 +14,7 @@ import MovieDetail from './pages/movie/MovieDetail';
 import Watchlist from './pages/user/Watchlist';
 import Profile from './pages/user/Profile';
 import SearchResults from './pages/search/SearchResults';
+import MovieHome from './pages/MovieHome/MovieHome';
 
 function App() {
   return (
@@ -23,13 +24,13 @@ function App() {
       <Route path="/register" element={<Register />} />
       
       {/* Protected Routes - Using the ProtectedRoute component */}
-      <Route element={<ProtectedRoute />}>
-        <Route path="/" element={<Home />} />
+      
+        <Route path="/" element={<MovieHome />} />
         <Route path="/movie/:id" element={<MovieDetail />} />
         <Route path="/watchlist" element={<Watchlist />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/search" element={<SearchResults />} />
-      </Route>
+   
       
       {/* Fallback Route */}
       <Route path="*" element={<Navigate to="/" replace />} />

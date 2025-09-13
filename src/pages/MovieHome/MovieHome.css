@@ -1,0 +1,76 @@
+/* Resetting margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+.movie-home {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.title {
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.movie-section {
+    margin-bottom: 40px;
+}
+
+.movie-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Movie List */
+.movie-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Movie Card */
+.movie-card {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.movie-poster {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+.movie-details {
+    padding: 15px;
+}
+
+.movie-details h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.movie-details p {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.movie-details p strong {
+    color: #333;
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
